@@ -1,0 +1,55 @@
+/* Colores: principal #2874A6, texto #333333, fondo #EAF0F6 */
+
+/* Plan B: Arial */
+#foto{
+    border-radius: 100px;
+    border: 4px solid black;
+}
+/* Estilo general */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #EAF0F6;
+    color: #333333;
+    margin: 30px;
+}
+
+/* Títulos */
+h1, h2 {
+    color: #2874A6;
+}
+
+/* Selector de etiqueta */
+p {
+    text-align: center;
+}
+
+/* Selector de clase */
+.perfil {
+    font-size: 16px;
+}
+
+/* Segundo selector de clase */
+.destacado {
+    font-weight: bold;
+}
+
+/* Selector de ID */
+#contacto {
+    background-color: #EAF0F6;
+    padding: 10px;
+}
+
+/* Selector descendiente */
+ul li {
+    margin: 8px 0;
+}
+
+/* Enlaces */
+a {
+    color: #2874A6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
