@@ -1,0 +1,129 @@
+/* 
+===================================================
+--- EXPLICACIÓN DE PADDING Y MARGIN ---
+- padding: Es el espacio INTERNO de un elemento. Se mide 
+  desde el contenido hasta el borde interior del elemento.
+- margin: Es el espacio EXTERNO de un elemento. Se mide desde 
+  el borde exterior del elemento hacia afuera, sirviendo 
+  para separar el elemento de sus vecinos.
+===================================================
+*/
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  color: #aaa;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* Perfil */
+#profile {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.avatar-box {
+  background-color: #e0e0e0;
+  color: #333;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.avatar-text {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #555;
+  margin-top: 5px;
+}
+
+.avatar-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.profile-info h2 {
+  margin: 0 0 5px 0;
+}
+
+.profile-info p {
+  margin: 0 0 10px 0;
+  color: #ccc;
+}
+
+.github-link {
+  color: #64b5f6;
+  text-decoration: none;
+}
+
+/* Contenedor de Tarjetas */
+.cards-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  flex: 1;
+  min-width: 280px;
+}
+
+.card {
+  padding: 20px;
+  margin: 10px 0;
+  border: 2px solid #555;
+  border-radius: 10px;
+  background-color: #222;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: #64b5f6;
+}
+
+.card h3 {
+  font-size: 0.85rem;
+  color: #aaa;
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+}
+
+.card h4 {
+  font-size: 1.2rem;
+  margin: 0 0 10px 0;
+  color: #fff;
+}
+
+.card-description {
+  color: #bbb;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+.btn-link {
+  color: #64b5f6;
+  font-weight: bold;
+}
