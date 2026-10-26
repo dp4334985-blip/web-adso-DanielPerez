@@ -1,0 +1,31 @@
+/* 1. Campos de ancho completo y estilos base */
+input, textarea, select {
+  width: 100%;
+  box-sizing: border-box; 
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* 2. Foco visible al interactuar */
+input:focus-visible, 
+textarea:focus-visible, 
+select:focus-visible {
+  outline: 2px solid #0056b3; 
+  outline-offset: 2px;
+}
+
+/* 3. Estilos en rojo para estados inválidos */
+input:user-invalid, 
+textarea:user-invalid, 
+select:user-invalid,
+.invalido {
+  border-color: #dc3545; 
+  background-color: #fff8f8; 
+}
+
+/* Asegurar que el foco inválido también se note en rojo */
+input:user-invalid:focus-visible,
+.invalido:focus-visible {
+  outline-color: #dc3545;
+}

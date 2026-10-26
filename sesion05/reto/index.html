@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripcion</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <main>
+        <h1>Formulario de Inscripcion</h1>
+        <form action="#" class="formulario" >
+          <fieldset>
+            <legend>Datos Personales</legend>
+            <div class="campo">
+                <label for="nombre">Nombre Completo</label>
+                <input type="text" id="nombre" name="nombre" required minlength="3">
+            </div>
+
+            <div class="campo">
+                <label for="documento">Documento ID:</label>
+                <input type="text" id="documento" name="documento" required minlength="6" maxlength="10">
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo electronico</label>
+                <input type="email" name="correo" id="correo" required>
+            </div>
+
+            <div class="campo">
+                <label for="telefono">Celular</label>
+                <input type="tel" id="telefono" name="telefono" required
+                 pattern="3[0-9]{9}" title="10 dígitos que empiecen por 3" maxlength="10">
+```
+            </div>
+
+
+          </fieldset>
+
+          <fieldset>
+            <legend>Tu perfil</legend>
+            <div class="campo">
+                <label for="tipo">Programa</label>
+                <select name="tipo" id="tipo" required>
+                    <option value="">Elije una opcion</option>
+                    <option value="aprendiz">ADSO</option>
+                    <option value="instructor">MECANICA</option>
+                    <option value="visitante">PSICOLOGIA</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <legend>Jornada</legend>
+                <label for="mañana" class="opcion">
+                    <input type="radio" name="Jornada" value="mañana" checked>Mañana
+                </label>
+
+                <label for="tarde" class="opcion">
+                    <input type="radio" name="jornada" value="tarde">Tarde
+                </label>
+
+                <label for="noche" class="opcion">
+                    <input type="radio" name="jornada" value="noche">Noche
+                </label>
+                
+
+            </fieldset>
+
+            <label>
+           <input type="checkbox" name="terminos" value="aceptado" checked>
+           Acepto los términos y condiciones
+            </label>
+
+            
+
+        </fieldset>
+
+          <button type="submit" class="boton">Registrarme</button>
+          </form>
+          
+           
+    </main>
+    
+</body>
+</html>

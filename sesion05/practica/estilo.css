@@ -1,0 +1,113 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 2rem 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(213, 223, 178);
+    color: rgb(255, 253, 253);
+}
+
+
+.formulario{
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 16px;
+    background-color: rgb(15, 15, 15);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+fieldset{
+    margin: 0 0 1.25rem;
+    padding: 1rem 1.25rem;
+    border: 1px solid #e4e7eb;
+    border-radius: 12px;
+
+}
+
+legend{
+    padding: 0 0.5rem;
+    font-weight: 600;
+    color: chartreuse;
+}
+
+.campo{
+    margin-bottom: 1rem;
+}
+
+.campo label{
+    display: block;
+    margin-bottom: 0.35rem;
+    font-weight: 600;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 0.6rem 0.75rem;
+    border: 2px solid #e4e7eb;
+    border-radius: 8px;
+    font: inherit;
+}
+
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible{
+    outline: 3px solid #ffb300;
+    outline-offset: 2px;
+    border-color: black;
+    }
+
+    .opcion{
+        display: inline-block;
+        margin-right: 1rem;
+    }
+
+    .opcion input{
+        width: auto;
+        margin-right: 0.35rem;
+    }
+
+    /*manejo de errores*/
+
+    input:user-invalid, 
+select:user-invalid,
+textarea:user-invalid{
+    border-color: #c62828;
+    background-color: #fff5f5;
+}
+
+.error{
+    display: block;
+    min-height: 1.2rem;
+    color: #c62828;
+    font-size: 0.85rem;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #4a7c59;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #385e44;
+}
+
+
+
+    
+
+    
+
+
