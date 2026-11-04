@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Aromo - Tienda de Café Artesanal</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <!-- Encabezado con Flexbox y space-between -->
+    <header class="site-header">
+        <div class="logo-container">
+            <h1 class="logo">☕ Café Aromo</h1>
+        </div>
+        <nav class="nav-menu">
+            <a href="#">Inicio</a>
+            <a href="#">Cafés</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal: Vitrina de Productos -->
+    <main class="main-content">
+        <section class="vitrina-section">
+            <h2>Nuestra Selección de Café</h2>
+            
+            <div class="vitrina">
+                <!-- Producto 1 -->
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=500&q=80" alt="Café Orgánico de Altura">
+                    <div class="info-producto">
+                        <span class="categoria">Grano Entero</span>
+                        <h3 class="nombre-producto">Café Orgánico de Altura</h3>
+                        <p class="precio">$18.500</p>
+                    </div>
+                </article>
+
+                <!-- Producto 2 -->
+                <article class="producto">
+                    <img src="https://tb-static.uber.com/prod/image-proc/processed_images/6fd76be8d3a2a6693f9dfc2ba8819b88/a1681d67ebe55c76c3af5f401619c278.jpeg" alt="Blend Espresso Intenso">
+                    <div class="info-producto">
+                        <span class="categoria">Espresso</span>
+                        <h3 class="nombre-producto">Blend Espresso Intenso</h3>
+                        <p class="precio">$16.000</p>
+                    </div>
+                </article>
+
+                <!-- Producto 3 (Agotado) -->
+                <article class="producto agotado">
+                    <div class="badge-agotado">Agotado</div>
+                    <img src="https://mulaandina.com/cdn/shop/files/cafe-geisha-2.png?v=1774709279&width=1946" alt="Café Especial Geisha">
+                    <div class="info-producto">
+                        <span class="categoria">Edición Limitada</span>
+                        <h3 class="nombre-producto">Café Especial Geisha</h3>
+                        <p class="precio">$32.000</p>
+                    </div>
+                </article>
+
+                <!-- Producto 4 -->
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80" alt="Café Descafeinado Suave">
+                    <div class="info-producto">
+                        <span class="categoria">Descafeinado</span>
+                        <h3 class="nombre-producto">Café Descafeinado Suave</h3>
+                        <p class="precio">$17.000</p>
+                    </div>
+                </article>
+
+                <!-- Producto 5 -->
+                <article class="producto">
+                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=500&q=80" alt="Café Molido Tradicional">
+                    <div class="info-producto">
+                        <span class="categoria">Molido</span>
+                        <h3 class="nombre-producto">Café Molido Tradicional</h3>
+                        <p class="precio">$14.000</p>
+                    </div>
+                </article>
+
+                <!-- Producto 6 -->
+                <article class="producto">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROLxoLwT48cVwg3cu3TZ8eeFogx8fdqQ8v0hpX4aoY85SBPWfGxcID6Uk&s=10" alt="Café de Origen Volcánico">
+                    <div class="info-producto">
+                        <span class="categoria">Grano Entero</span>
+                        <h3 class="nombre-producto">Café de Origen Volcánico</h3>
+                        <p class="precio">$21.000</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página con 2 o 3 columnas en Flexbox -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Café Aromo</h3>
+                <p>Llevando los mejores granos artesanales directamente desde las montañas hasta tu taza.</p>
+            </div>
+            <div class="footer-column">
+                <h3>Enlaces Rápidos</h3>
+                <ul>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">Soporte Técnico</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Síguenos</h3>
+                <p>Instagram: @cafe_aromo</p>
+                <p>Facebook: /CafeAromoOficial</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Café Aromo. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+/* ==========================================================================
+   3. EXPLICACIÓN: DIFERENCIA ENTRE JUSTIFY-CONTENT Y ALIGN-ITEMS
+   ==========================================================================
+   - justify-content: Alinea y distribuye los elementos a lo largo del EJE PRINCIPAL 
+     (main axis). Con 'flex-direction: row' (en fila por defecto), este eje es HORIZONTAL. 
+     Se usa aquí con 'space-between' para enviar el título 'LavaloYA 24/horas' 
+     a la izquierda y el menú de enlaces a la derecha.
+   
+   - align-items: Alinea los elementos a lo largo del EJE TRANSVERSAL o secundario 
+     (cross axis). Con 'flex-direction: row', este eje es VERTICAL. 
+     Garantiza que el título y los enlaces queden perfectamente centrados en altura.
+   ========================================================================== */
+
+/* Configuración General */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #f3f4f6;
+  color: #111827;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* 2. MENÚ EN FILA CON FLEXBOX (Barra Superior Oscura) */
+.encabezado-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f172a; /* Azul noche oscuro */
+  padding: 1.2rem 3rem;
+  color: #ffffff;
+}
+
+.marca h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navegacion-principal {
+  display: flex;
+  gap: 24px;
+}
+
+.navegacion-principal a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.navegacion-principal a:hover,
+.navegacion-principal a.activo {
+  color: #93c5fd;
+}
+
+/* Estructura del Contenido Principal */
+.contenedor-principal {
+  flex: 1;
+  max-width: 900px;
+  width: 90%;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.titulo-pagina {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo-tabla {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #1f2937;
+}
+
+/* Estilos de la Tabla (Diseño Tarjeta de la Imagen) */
+.tabla-servicios {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.tabla-servicios th {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: left;
+  font-weight: bold;
+}
+
+.tabla-servicios td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+  color: #374151;
+}
+
+/* Tarjeta Promoción Inferior */
+.tarjeta-promocion {
+  background-color: #e2e8f0;
+  padding: 1.2rem;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+/* Pie de Página Oscuro */
+.pie-pagina {
+  background-color: #1e293b;
+  color: #94a3b8;
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+}
