@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Ventas - Café Aromo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <div class="grid-layout">
+        <!-- 1. Encabezado -->
+        <header class="header">
+            <h1>☕ Café Aromo - Panel de Control</h1>
+            <div class="user-info">Hola, Administrador</div>
+        </header>
+
+        <!-- 2. Menú Lateral -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="#" class="active">📊 Resumen</a>
+                <a href="#">📦 Productos</a>
+                <a href="#">🛒 Pedidos</a>
+                <a href="#">👥 Clientes</a>
+                <a href="#">⚙️ Configuración</a>
+            </nav>
+        </aside>
+
+        <!-- 3. Contenido Principal -->
+        <main class="content">
+            
+            <!-- Indicadores del negocio -->
+            <section class="kpi-grid">
+                <div class="kpi-card">
+                    <h3>Ventas Totales</h3>
+                    <p class="kpi-value">$4.850.000</p>
+                </div>
+                <div class="kpi-card">
+                    <h3>Pedidos del Mes</h3>
+                    <p class="kpi-value">342</p>
+                </div>
+                <div class="kpi-card">
+                    <h3>Nuevos Clientes</h3>
+                    <p class="kpi-value">89</p>
+                </div>
+                <div class="kpi-card">
+                    <h3>Ticket Promedio</h3>
+                    <p class="kpi-value">$14.180</p>
+                </div>
+            </section>
+
+            <!-- Galería de Productos más vendidos -->
+            <section class="gallery-section">
+                <h2>🔥 Productos Más Vendidos</h2>
+                
+                <div class="product-grid">
+                    <!-- Producto destacado (ocupa 2 columnas) -->
+                    <article class="product-card featured">
+                        <img src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?auto=format&fit=crop&w=800&q=80" alt="Café Orgánico de Altura">
+                        <div class="product-info">
+                            <span class="badge">Top #1 Más Vendido</span>
+                            <h3>Café Orgánico de Altura</h3>
+                            <p>Grano selecto cultivado a más de 1.800 msnm. Sabor equilibrado con notas a chocolate y miel.</p>
+                        </div>
+                    </article>
+
+                    <!-- Producto 2 -->
+                    <article class="product-card">
+                        <img src="https://tb-static.uber.com/prod/image-proc/processed_images/6fd76be8d3a2a6693f9dfc2ba8819b88/a1681d67ebe55c76c3af5f401619c278.jpeg" alt="Blend Espresso Intenso">
+                        <div class="product-info">
+                            <h3>Blend Espresso</h3>
+                            <p>Tueste oscuro ideal para cafeteras de filtro o espresso.</p>
+                        </div>
+                    </article>
+
+                    <!-- Producto 3 -->
+                    <article class="product-card">
+                        <img src="https://mulaandina.com/cdn/shop/files/cafe-geisha-2.png?v=1774709279&width=1946" alt="Café Especial Geisha">
+                        <div class="product-info">
+                            <h3>Café Especial Geisha</h3>
+                            <p>Edición limitada con perfil floral y acidez cítrica.</p>
+                        </div>
+                    </article>
+
+                    <!-- Producto 4 -->
+                    <article class="product-card">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=500&q=80" alt="Café Descafeinado Suave">
+                        <div class="product-info">
+                            <h3>Descafeinado Suave</h3>
+                            <p>Proceso 100% natural sin químicos añadidos.</p>
+                        </div>
+                    </article>
+
+                    <!-- Producto 5 -->
+                    <article class="product-card">
+                        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=500&q=80" alt="Café Molido Tradicional">
+                        <div class="product-info">
+                            <h3>Molido Tradicional</h3>
+                            <p>El aroma clásico para la molienda del día a día.</p>
+                        </div>
+                    </article>
+
+                    <!-- Producto 6 -->
+                    <article class="product-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROLxoLwT48cVwg3cu3TZ8eeFogx8fdqQ8v0hpX4aoY85SBPWfGxcID6Uk&s=10" alt="Café de Origen Volcánico">
+                        <div class="product-info">
+                            <h3>Origen Volcánico</h3>
+                            <p>Suelo rico en minerales que aporta cuerpo denso.</p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- 4. Pie de página -->
+        <footer class="footer">
+            <p>&copy; 2026 Café Aromo - Todos los derechos reservados</p>
+        </footer>
+    </div>
+
+</body>
+</html>

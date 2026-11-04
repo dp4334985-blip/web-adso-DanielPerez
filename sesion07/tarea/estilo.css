@@ -1,0 +1,210 @@
+/* Estilos Generales y Reseteo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f6f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Encabezado con display: flex y space-between */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3e2723;
+    color: #fff;
+    padding: 1.2rem 5%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-menu a {
+    color: #d7ccc8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #ffffff;
+}
+
+/* Contenido Principal */
+.main-content {
+    flex: 1;
+    padding: 2rem 5%;
+}
+
+.vitrina-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #4e342e;
+    font-size: 2rem;
+}
+
+/* ==========================================================================
+   EXPLICACIÓN: ¿CUÁNDO USAR FLEXBOX Y CUÁNDO GRID?
+   ==========================================================================
+   - FLEXBOX (Flexible Box Layout): 
+     Se utiliza principalmente para diseños unidimensionales, es decir, 
+     cuando organizamos elementos en una sola dirección a la vez: una fila 
+     o una columna. Es ideal para alinear componentes internos (como los 
+     elementos de un menú de navegación, centrar contenido, o distribuir 
+     espacios entre elementos hijos en una barra o pie de página).
+   
+   - CSS GRID (Grid Layout): 
+     Se utiliza para diseños bidimensionales, lo que significa que controla 
+     filas y columnas de forma simultánea. Es la herramienta perfecta para 
+     crear la estructura general de páginas enteras (layouts principales) o 
+     galerías de productos complejas y adaptables (como esta vitrina con 
+     auto-fit y minmax), donde los elementos deben encajar ordenadamente 
+     en una cuadrícula estructurada.
+   ========================================================================== */
+
+/* Vitrina convertida a Grid con repeat(auto-fit, minmax(220px, 1fr)) */
+.vitrina {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+}
+
+/* Tarjetas de producto (Sin flex, adaptadas a Grid) */
+.producto {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Garantiza que todas midan lo mismo sin deformarse */
+}
+
+.info-producto {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.categoria {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #8d6e63;
+    font-weight: bold;
+}
+
+.nombre-producto {
+    font-size: 1.1rem;
+    color: #212121;
+}
+
+.precio {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #d84315;
+}
+
+/* Estilos para el producto agotado */
+.producto.agotado {
+    opacity: 0.75;
+}
+
+.producto.agotado img {
+    filter: grayscale(40%);
+}
+
+.badge-agotado {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #d32f2f;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 4px;
+    text-transform: uppercase;
+    z-index: 2;
+}
+
+/* Pie de página con columnas hechas en Flexbox */
+.site-footer {
+    background-color: #261a17;
+    color: #d7ccc8;
+    padding: 3rem 5% 1rem 5%;
+    margin-top: auto;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.footer-column h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #5d4037;
+    padding-bottom: 0.3rem;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column ul li a {
+    color: #bcaaa4;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #3e2723;
+    padding-top: 1.5rem;
+    font-size: 0.85rem;
+    color: #8d6e63;
+}
