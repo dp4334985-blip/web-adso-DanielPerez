@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mis tareas</title>
+  <link rel="stylesheet" href="kit.css">
+</head>
+<body>
+  <main class="app">
+
+    <!-- Encabezado -->
+    <header class="encabezado">
+      <h1>Mis tareas</h1>
+    </header>
+
+    <!-- Formulario para agregar -->
+    <form class="form-agregar" action="#">
+      <input type="text" id="nueva-tarea" placeholder="Nueva tarea" aria-label="Nueva tarea">
+      <button type="submit">Agregar</button>
+    </form>
+
+    <!-- Alerta de error (oculta por defecto) -->
+    <p class="alerta oculto" role="alert">Escribe una tarea antes de agregar.</p>
+
+    <!-- Lista de tareas -->
+    <ul class="lista">
+      <li class="tarea hecha">
+        <input type="checkbox" id="t1" checked>
+        <label for="t1">Trabajar</label>
+        <button type="button" aria-label="Eliminar tarea: Trabajar">🗑️</button>
+      </li>
+      <li class="tarea">
+        <input type="checkbox" id="t2">
+        <label for="t2">Cocinar</label>
+        <button type="button" aria-label="Eliminar tarea: Cocinar">🗑️</button>
+      </li>
+      <li class="tarea hecha">
+        <input type="checkbox" id="t3" checked>
+        <label for="t3">Hacer ejercicio</label>
+        <button type="button" aria-label="Eliminar tarea: Hacer ejercicio">🗑️</button>
+      </li>
+      <li class="tarea hecha">
+        <input type="checkbox" id="t4" checked>
+        <label for="t4">Estudiar</label>
+        <button type="button" aria-label="Eliminar tarea: Estudiar">🗑️</button>
+      </li>
+      <li class="tarea">
+        <input type="checkbox" id="t5">
+        <label for="t5">Lavar</label>
+        <button type="button" aria-label="Eliminar tarea: Lavar">🗑️</button>
+      </li>
+      <li class="tarea">
+        <input type="checkbox" id="t6">
+        <label for="t6">Tender ropa</label>
+        <button type="button" aria-label="Eliminar tarea: Tender ropa">🗑️</button>
+      </li>
+    </ul>
+
+    <!-- Contador -->
+    <p class="contador">3 pendientes de 6</p>
+
+  </main>
+</body>
+</html>

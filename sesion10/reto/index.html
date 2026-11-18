@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Kit de Diseño - Sesion10</title>
+
+    <!-- Conectamos nuestro archivo CSS -->
+    <link rel="stylesheet" href="kit.css">
+</head>
+<body>
+
+    <h1>Mi Kit de Diseño CSS</h1>
+    <p>Reto de la Sesión 10 - Biblioteca de componentes</p>
+
+    <!-- 1. PALETA DE COLORES -->
+    <section>
+        <h2>1. Paleta de colores</h2>
+
+        <div class="paleta">
+            <div class="color muestra-fondo">--color-fondo</div>
+            <div class="color muestra-superficie">--color-superficie</div>
+            <div class="color muestra-principal">--color-principal</div>
+            <div class="color muestra-secundario">--color-secundario</div>
+            <div class="color muestra-peligro">--color-peligro</div>
+        </div>
+    </section>
+
+    <!-- 2. TIPOGRAFIA -->
+    <section>
+        <h2>2. Tipografía</h2>
+
+        <h1>Este es un H1</h1>
+        <h2>Este es un H2</h2>
+        <h3>Este es un H3</h3>
+
+        <p>
+            Este es un párrafo de ejemplo para mostrar los estilos de texto.
+            Visita <a href="https://developer.mozilla.org/es/docs/Web/CSS"
+            target="_blank">Aprender CSS</a> para conocer más.
+        </p>
+
+        <small>Este es un texto pequeño de prueba.</small>
+    </section>
+
+    <!-- 3. BOTONES -->
+    <section>
+        <h2>3. Botones</h2>
+
+        <button class="btn btn-principal">Principal</button>
+        <button class="btn btn-secundario">Secundario</button>
+        <button class="btn btn-peligro">Peligro</button>
+        <button class="btn" disabled>Deshabilitado</button>
+    </section>
+
+    <!-- 4. ALERTAS E INSIGNIAS -->
+    <section>
+        <h2>4. Alertas</h2>
+
+        <div class="alerta alerta-info">Información: este es un mensaje informativo.</div>
+        <div class="alerta alerta-exito">Éxito: la operación se realizó correctamente.</div>
+        <div class="alerta alerta-advertencia">Advertencia: revisa antes de continuar.</div>
+        <div class="alerta alerta-error">Error: algo salió mal.</div>
+
+        <h3>Insignias</h3>
+
+        <span class="insignia insignia-info">Información</span>
+        <span class="insignia insignia-exito">Completado</span>
+        <span class="insignia insignia-premium">Premium</span>
+    </section>
+
+    <!-- 5. ESTADOS -->
+    <section>
+        <h2>5. Estados</h2>
+
+        <h3>Estado cargando</h3>
+        <div class="cargando"></div>
+
+        <h3>Estado hecha</h3>
+        <p class="hecha">✔ Tarea completada correctamente</p>
+
+        <h3>Input con error</h3>
+        <input type="text" class="error" value="Dato incorrecto">
+        <small class="error">Este campo contiene un error.</small>
+
+        <h3>Botón activo</h3>
+        <button class="btn activo">Botón activo</button>
+
+        <!-- Este párrafo no se ve porque la clase .oculto tiene display: none -->
+        <p class="oculto">Este texto está oculto intencionalmente.</p>
+
+    </section>
+
+</body>
+</html>
